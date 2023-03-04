@@ -75,6 +75,15 @@ while not pr.window_should_close():
     esfehan = pr.Rectangle(303, 398, 80, 25)
     Button(pr.Vector2(303, 398),80, 25, pr.RED)
 
+    fars = pr.Rectangle(329, 463, 25, 80)
+    Button(pr.Vector2(329, 463),25, 80, pr.RED)
+
+    ghasvin = pr.Rectangle(271, 323, 15, 15)
+    Button(pr.Vector2(271, 323),15, 15, pr.RED)
+
+    ghom = pr.Rectangle(295, 369, 10, 10)
+    Button(pr.Vector2(295, 369),10, 10, pr.RED)
+
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
@@ -128,9 +137,27 @@ while not pr.window_should_close():
             press = True
             print("Pressed")
 
+    elif (pr.check_collision_point_rec(mousePoint , fars)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , ghasvin)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , ghom)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
     else:
         press = False   
 
+    
     # print(mousePoint.x,mousePoint.y)
 
 
