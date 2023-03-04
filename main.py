@@ -93,6 +93,22 @@ while not pr.window_should_close():
     hamedan = pr.Rectangle(239, 352, 12, 15)
     Button(pr.Vector2(239, 352), 12, 15, pr.RED)
 
+    hormoz = pr.Rectangle(413, 554, 20, 17)
+    Button(pr.Vector2(413, 554), 20, 17, pr.RED)
+
+    kerman = pr.Rectangle(397, 481, 80, 42) 
+    Button(pr.Vector2(397, 481),80, 42,pr.RED )
+
+    kermanshah = pr.Rectangle(186, 369, 10, 10)
+    Button(pr.Vector2(186, 369), 23, 13, pr.RED)
+
+    khorasan_junubi = pr.Rectangle(474, 421, 54, 42)
+    Button(pr.Vector2(474, 421), 54, 42, pr.RED)
+
+    khorasan_razavi = pr.Rectangle( 460, 323, 57,50)
+    Button(pr.Vector2(460, 323), 57, 50, pr.RED)
+
+
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
@@ -182,12 +198,29 @@ while not pr.window_should_close():
             press = True
             print("Pressed")
 
+    elif (pr.check_collision_point_rec(mousePoint , hormoz)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , kerman)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , kermanshah)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
 
     else:
         press = False   
 
     
-    # print(mousePoint.x,mousePoint.y)
+    print(mousePoint.x,mousePoint.y)
 
 
     pr.end_drawing()
