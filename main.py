@@ -63,6 +63,17 @@ while not pr.window_should_close():
     azerbayjan_gharbi = pr.Rectangle(177,310,15,15)
     Button(pr.Vector2(172,304),15,15,pr.RED)
 
+    boshehr = pr.Rectangle(307, 522, 10, 10)
+    Button(pr.Vector2(307,522),10,10,pr.RED)
+
+    chahar_mahal = pr.Rectangle(289, 439, 10, 10)
+    Button(pr.Vector2(289, 439), 10, 10, pr.RED)
+
+    elam = pr.Rectangle(196, 405, 10, 10)
+    Button(pr.Vector2(196, 405), 10, 10, pr.RED)
+
+    esfehan = pr.Rectangle(303, 398, 80, 25)
+    Button(pr.Vector2(303, 398),80, 25, pr.RED)
 
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
@@ -88,6 +99,30 @@ while not pr.window_should_close():
             print("Pressed")
 
     elif (pr.check_collision_point_rec(mousePoint , azerbayjan_gharbi)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , boshehr)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , chahar_mahal)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , elam)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , esfehan)):
 
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
             press = True
