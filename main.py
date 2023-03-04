@@ -108,6 +108,9 @@ while not pr.window_should_close():
     khorasan_razavi = pr.Rectangle( 460, 323, 57,50)
     Button(pr.Vector2(460, 323), 57, 50, pr.RED)
 
+    khorasan_shomali = pr.Rectangle(430, 281, 20, 20)
+    Button(pr.Vector2(430, 281), 20, 20, pr.RED)
+
 
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
@@ -216,6 +219,23 @@ while not pr.window_should_close():
             press = True
             print("Pressed")
 
+    elif (pr.check_collision_point_rec(mousePoint , khorasan_junubi)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , khorasan_razavi)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+    
+    elif (pr.check_collision_point_rec(mousePoint , khorasan_shomali)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
     else:
         press = False   
 
