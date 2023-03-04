@@ -111,6 +111,9 @@ while not pr.window_should_close():
     khorasan_shomali = pr.Rectangle(430, 281, 20, 20)
     Button(pr.Vector2(430, 281), 20, 20, pr.RED)
 
+    khuzestan = pr.Rectangle(237,437,42,40)
+    Button(pr.Vector2(237,437),42,40,pr.RED)
+
 
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
@@ -236,11 +239,18 @@ while not pr.window_should_close():
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
             press = True
             print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , khuzestan)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+            
     else:
         press = False   
 
     
-    print(mousePoint.x,mousePoint.y)
+    # print(mousePoint.x,mousePoint.y)
 
 
     pr.end_drawing()
