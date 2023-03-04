@@ -84,6 +84,15 @@ while not pr.window_should_close():
     ghom = pr.Rectangle(295, 369, 10, 10)
     Button(pr.Vector2(295, 369),10, 10, pr.RED)
 
+    gilan = pr.Rectangle(262, 292, 10, 10)
+    Button(pr.Vector2(262, 292),10, 10, pr.RED)
+
+    golestan = pr.Rectangle(386, 297, 18, 10)
+    Button(pr.Vector2(386, 297),18, 10, pr.RED)
+
+    hamedan = pr.Rectangle(239, 352, 12, 15)
+    Button(pr.Vector2(239, 352), 12, 15, pr.RED)
+
     if (pr.check_collision_point_rec(mousePoint , exit)):
         
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
@@ -154,6 +163,26 @@ while not pr.window_should_close():
         if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
             press = True
             print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , gilan)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , golestan)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+    elif (pr.check_collision_point_rec(mousePoint , hamedan)):
+
+        if ( pr.is_mouse_button_down(pr.MOUSE_BUTTON_LEFT) and press == False):
+            press = True
+            print("Pressed")
+
+
     else:
         press = False   
 
