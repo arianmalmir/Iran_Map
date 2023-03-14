@@ -18,7 +18,7 @@ Iran Map in Python!
 <br />
 
 ## Customizble States
-You Can Move, REsize, Change Color the States!
+You Can Move, Resize, Change Color the States!
 
 ![Customizable states](screenshots/Screenshot%20from%202023-03-14%2008-27-12.png?raw=true "Customizable states")
 
