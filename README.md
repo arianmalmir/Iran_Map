@@ -2,6 +2,7 @@
 
 Iran Map in Python!
 
+<br />
 
 ## Abilities
 * Customizable Map
@@ -10,9 +11,11 @@ Iran Map in Python!
 * Change Size
 * Compatible with raylib, pygame, ...
 
-
+<br />
 
 ![main screen](screenshots/Screenshot%20from%202023-03-14%2008-25-45.png?raw=true "main screen")
+
+<br />
 
 ## Customizble States
 
