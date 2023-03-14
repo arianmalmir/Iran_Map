@@ -13,3 +13,7 @@ Iran Map in Python!
 
 
 ![main screen](screenshots/Screenshot%20from%202023-03-14%2008-25-45.png?raw=true "main screen")
+
+## Customizble States
+
+![Customizable states](screenshots/Screenshot%20from%202023-03-14%2008-27-12.png?raw=true "Customizable states")
