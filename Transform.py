@@ -1,7 +1,7 @@
 from pyray import (
     load_image, unload_image, 
     load_texture_from_image, 
-    draw_texture, Vector2,
+    draw_texture,
     WHITE , BLACK, GREEN, RED, ORANGE, YELLOW, PINK,
     draw_rectangle,
     )
